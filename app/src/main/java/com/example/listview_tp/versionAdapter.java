@@ -38,8 +38,8 @@ public class versionAdapter extends BaseAdapter {
         int pos = position;
         if (listItem == null)
           listItem = layoutInflater.inflate(R.layout.list_item_layout, null);
-        ImageView imageView = listItem.findViewById(R.id.icon);
-        TextView titre =  listItem.findViewById(R.id.title);
+        ImageView imageView = (ImageView)listItem.findViewById(R.id.icon);
+        TextView titre =  listItem.findViewById(R.id.titre);
         TextView sousTitre =  listItem.findViewById(R.id.ss_titre);
         imageView.setBackgroundResource(thumb[pos]);
         titre.setText(title[pos]);
